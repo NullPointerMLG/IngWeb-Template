@@ -4,7 +4,6 @@ from flask_cors import CORS
 import mongoengine
 from config import MONGO_URL
 
-
 mongoengine.connect(alias="default", host=MONGO_URL)
 
 APP = Flask(__name__)

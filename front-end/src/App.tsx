@@ -4,8 +4,7 @@ import './App.scss';
 import {
   BrowserRouter,
   Switch,
-  Route,
-  Link
+  Route
 } from 'react-router-dom';
 import Landing from './components/Landing/Landing';
 import Register from './components/Register/Register';
@@ -14,7 +13,6 @@ import NotFound from './components/NotFound/NotFound';
 
 const App: React.FC = () => {
   return (
-    <div className="App">
       <BrowserRouter>
           <React.Fragment> 
             <Switch>
@@ -23,8 +21,7 @@ const App: React.FC = () => {
               <Route component={NotFound} />
             </Switch> 
           </React.Fragment>
-        </BrowserRouter>   
-    </div>
+        </BrowserRouter>
   );
 }
 
