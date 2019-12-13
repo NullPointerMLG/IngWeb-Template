@@ -4,9 +4,8 @@ import {
   Switch,
   Route
 } from 'react-router-dom';
-import Landing from './components/Landing/Landing';
-import Register from './components/Register/Register';
-import NotFound from './components/NotFound/NotFound';
+import { Landing } from './components/Landing/Landing';
+import { NotFound } from './components/NotFound/NotFound';
 
 
 const App: React.FC = () => {
@@ -15,7 +14,6 @@ const App: React.FC = () => {
           <React.Fragment> 
             <Switch>
               <Route exact path="/" component={Landing} /> 
-              <Route exact path="/register" component={Register} />
               <Route component={NotFound} />
             </Switch> 
           </React.Fragment>

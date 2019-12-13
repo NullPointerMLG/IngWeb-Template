@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function NotFound() {
+export const NotFound = () => {
   return (
     <div>
       <h1>Ooops! You are lost.</h1>
